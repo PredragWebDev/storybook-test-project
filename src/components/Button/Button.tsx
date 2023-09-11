@@ -2,13 +2,12 @@ import React from 'react';
 import StyledButtonRow from './button.styled';
 import { Button } from 'antd';
 import { Col, Row } from 'antd';
-import fire_primary from './icons/fire_primary.svg';
-import fire_other from './icons/fire_other.svg';
+import fire_primary from '../icons/fire_primary.svg';
+import fire_other from '../icons/fire_other.svg';
 import { PlusOutlined } from '@ant-design/icons';
 import 'tailwindcss/tailwind.css';
 // import type {SizeType} from 'antd';
 // import { StyledButtonRowOther } from './button.styled';
-
 
 interface ButtonProps {
   type: 'primary' | 'link' | 'text' | 'default' | 'dashed' | undefined;
@@ -215,7 +214,7 @@ export const ButtonGroup = ({
 
       <Row className='mt-10'>
         <Col span={6}>
-        <p className=" ml-14 flex font-sans font-medium justify-center mt-4 mb-4 text-base">Simple</p>
+        <p className="flex font-sans font-medium justify-center ml-14 mt-4 mb-4 text-base">Simple</p>
           <StyledButtonRow
             type="primary"
             width="178px"
@@ -231,7 +230,7 @@ export const ButtonGroup = ({
             display="flex"
           >
             <div id="fireIcon">
-              <Button id="fireIconButton" size={size} type={type}>
+              <Button id="fireIconButton" type={type}>
                 <img
                   src={type === 'primary' ? fire_primary : fire_other}
                   alt="fire icon"
@@ -249,14 +248,14 @@ export const ButtonGroup = ({
             </div>
 
             <div id="plusIcon">
-              <Button id="plusIconButton" size={size} type={type}>
+              <Button id="plusIconButton" type={type}>
                 <PlusOutlined />
               </Button>
             </div>
           </StyledButtonRow>
         </Col>
         <Col span={6}>
-        <p className=" ml-14 flex font-sans font-medium justify-center mt-4 mb-4 text-base">Round</p>
+        <p className="flex font-sans font-medium justify-center ml-14 mt-4 mb-4 text-base">Round</p>
           <StyledButtonRow
             type="primary"
             width="178px"
@@ -272,7 +271,7 @@ export const ButtonGroup = ({
             display="flex"
           >
             <div id="fireIcon">
-              <Button id="fireIconButton" size={size} type={type}>
+              <Button id="fireIconButton" type={type}>
                 <img
                   src={type === 'primary' ? fire_primary : fire_other}
                   alt="fire icon"
@@ -290,14 +289,14 @@ export const ButtonGroup = ({
             </div>
 
             <div id="plusIcon">
-              <Button id="plusIconButton" size={size} type={type}>
+              <Button id="plusIconButton" type={type}>
                 <PlusOutlined />
               </Button>
             </div>
           </StyledButtonRow>
         </Col>
         <Col span={6}>
-        <p className=" ml-14 flex font-sans font-medium justify-center mt-4 mb-4 text-base">Circle</p>
+        <p className="flex font-sans font-medium justify-center ml-14 mt-4 mb-4 text-base">Circle</p>
           <StyledButtonRow
             type="primary"
             width="178px"
@@ -313,7 +312,7 @@ export const ButtonGroup = ({
             display="flex"
           >
             <div id="fireIcon">
-              <Button id="fireIconButton" size={size} type={type}>
+              <Button id="fireIconButton" type={type}>
                 <img
                   src={type === 'primary' ? fire_primary : fire_other}
                   alt="fire icon"
@@ -331,7 +330,7 @@ export const ButtonGroup = ({
             </div>
 
             <div id="plusIcon">
-              <Button id="plusIconButton" size={size} type={type}>
+              <Button id="plusIconButton" type={type}>
                 <PlusOutlined />
               </Button>
             </div>
